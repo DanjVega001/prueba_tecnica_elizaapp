@@ -25,7 +25,7 @@ Para ejecutar el proyecto utilizando Docker, sigue estos pasos:
    ```
 
 4. **Accede a la aplicación:**  
-   - Backend API: `http://localhost:80`
+   - `http://localhost:80`
    
 5. Para detener los contenedores:
    ```sh
