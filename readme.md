@@ -9,7 +9,7 @@ Para ejecutar el proyecto utilizando Docker, sigue estos pasos:
 1. **Clona el repositorio:**
    ```sh
    git clone https://github.com/DanjVega001/prueba_tecnica_elizaapp.git
-   cd prueba-tecnica
+   cd prueba_tecnica_elizaapp
    ```
 
 2. **Copia el archivo de variables de entorno:**
@@ -43,7 +43,7 @@ Si prefieres ejecutar la prueba técnica sin Docker, sigue estos pasos:
 1. **Clona el repositorio:**
    ```sh
    git clone https://github.com/DanjVega001/prueba_tecnica_elizaapp.git
-   cd prueba-tecnica
+   cd prueba_tecnica_elizaapp
    ```
 
 2. **Configura el archivo de entorno:**
