@@ -92,23 +92,23 @@ prueba_tecnica/
 │   │   │   ├── Task.php          # Modelo de la tarea
 │   │   │   ├── TaskController.php # Controlador de tareas
 │   │   │   ├── TaskModel.php      # Acceso a la base de datos
-│   │   ├── database/
-│   │   │   ├── database.php       # Conexión a la base de datos
-│   │   │   ├── migration.php      # Migraciones
 |   |   ├── completed_task.php      # Implementa la lógica del completar la tarea      
 |   |   ├── create_task.php         # Implementa la lógica del crear la tarea  
 |   |   ├── delete_task.php         # Implementa la lógica del eliminar la tarea  
 |   |   ├── get_tasks.php           # Implementa la lógica del traer las tarea  
 |   |   ├── update_task.php         # Implementa la lógica del actualizar la tarea  
-│── frontend/
-│   ├── assets/                     # Imágenes y recursos
-│   ├── css/                         # Hojas de estilo
-│   ├── js/
-│   │   ├── completed_task.js        # Lógica de completado de tareas
-│   │   ├── create_task.js           # Creación de tareas
-│   │   ├── delete_task.js           # Eliminación de tareas
-│   │   ├── get_tasks.js             # Obtener tareas
-│   │   ├── update_task.js           # Actualizar tareas
+│   ├── database/
+│   │   ├── database.php       # Conexión a la base de datos
+│   │   ├── migration.php      # Migraciones
+│   │──frontend/
+│   |   ├── assets/                     # Imágenes y recursos
+│   |   ├── css/                         # Hojas de estilo
+│   |   ├── js/
+│   │   |   ├── completed_task.js        # Lógica de completado de tareas
+│   │   |   ├── create_task.js           # Creación de tareas
+│   │   |   ├── delete_task.js           # Eliminación de tareas
+│   │   |   ├── get_tasks.js             # Obtener tareas
+│   │   |   ├── update_task.js           # Actualizar tareas
 │   ├── index.php                    # Punto de entrada del frontend
 │── nginx/
 │   ├── nginx.conf                    # Configuración de Nginx
