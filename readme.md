@@ -109,7 +109,7 @@ prueba_tecnica/
 │   │   |   ├── delete_task.js           # Eliminación de tareas
 │   │   |   ├── get_tasks.js             # Obtener tareas
 │   │   |   ├── update_task.js           # Actualizar tareas
-│   ├── index.php                    # Punto de entrada del frontend
+│   ├── index.php                    # Punto de entrada de la aplicación
 │── nginx/
 │   ├── nginx.conf                    # Configuración de Nginx
 │── .env                               # Variables de entorno
