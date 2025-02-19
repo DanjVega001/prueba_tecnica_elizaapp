@@ -1,0 +1,54 @@
+
+services:
+  php:
+    container_name: 'php'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app/:/var/www/public
+    environment:
+      DB_CONNECTION: ${DB_CONNECTION}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_DATABASE: ${DB_DATABASE}
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+    networks:
+      - network
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+
+  db:
+    container_name: db
+    image: mysql:8.2.0
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - '3306:3306'
+    networks:
+      - network
+
+  nginx:
+    container_name: nginx
+    image: nginx:alpine
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d
+      - ./app/:/var/www/public
+    depends_on:
+      - php
+      - db
+    networks:
+      - network
+
+
+networks:
+  network:
+    driver: bridge
