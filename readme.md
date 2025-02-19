@@ -121,5 +121,5 @@ Esta estructura permite mantener el código modular y escalable. Se implementa u
 
 ## ✅ Notas Finales
 - Asegúrate de tener **PHP 8+, MySQL 8+** instalado si ejecutas sin Docker.
-- Si usas Docker, recuerda liberar los puertos usados el docker-compose.yml para la ejecución del proyecto.
+- Si usas Docker, recuerda liberar los puertos usados en el docker-compose.yml para la ejecución del proyecto.
 - Si no usas Docker recuerda habilitar extensión de PDO para MySQL
