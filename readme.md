@@ -8,7 +8,7 @@ Para ejecutar el proyecto utilizando Docker, sigue estos pasos:
 
 1. **Clona el repositorio:**
    ```sh
-   git clone https://github.com/tu-repositorio/prueba-tecnica.git
+   git clone https://github.com/DanjVega001/prueba_tecnica_elizaapp.git
    cd prueba-tecnica
    ```
 
@@ -42,7 +42,7 @@ Si prefieres ejecutar la prueba técnica sin Docker, sigue estos pasos:
 
 1. **Clona el repositorio:**
    ```sh
-   git clone https://github.com/tu-repositorio/prueba-tecnica.git
+   git clone https://github.com/DanjVega001/prueba_tecnica_elizaapp.git
    cd prueba-tecnica
    ```
 
